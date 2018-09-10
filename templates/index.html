@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta -->
+        <meta charset="utf-8"/>
+        <meta content="initial-scale=1, width=device-width" name="viewport"/>
+
+        <!-- http://getbootstrap.com/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <!-- App's own CSS -->
+        <link href="/static/style.css" rel="stylesheet"/>
+
+        <!-- http://jquery.com/ -->
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+        <!-- http://getbootstrap.com/ -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- https://github.com/corejavascript/typeahead.js/blob/master/doc/jquery_typeahead.md -->
+        <script src="https://cdn.rawgit.com/corejavascript/typeahead.js/master/dist/typeahead.jquery.js"></script>
+
+        <!-- http://handlebarsjs.com/ -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+        <!-- app's own JavaScript -->
+        <script src="/static/script.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Khand" rel="stylesheet">
+
+
+        <!-- google map api -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWtv68ovqDnNP0ht8p_ky9LZ5nVBitHtw&callback=initMap"></script>
+
+        <title>Your Local Weather</title>
+    </head>
+    <body>
+
+
+        <div class = 'container-fluid text-center'>
+
+
+                <div id = "search" class = "text-center">
+                    <form>
+                        <input id="address" type="textbox" placeholder="Enter City">
+                        <input id="submit" type="button" value="Search">
+                    </form>
+                </div>
+            <div class = "row" id = 'main'>
+                <div  class = "col-lg-6 col-md-6 col-sm-6 center-block">
+                    <div class = 'block'>
+                        <h2 id = "title">Your Weather</h2>
+                        <h3 id = 'location'>City, Country</h3>
+                        <div id = 'img'></div>
+                        <h3 id = 'temp'>--</h3>
+                        <a id = 'f' class = 'btn btn-primary'>F&deg</a>
+                        <a id = 'c' class = 'btn'>C&deg</a>
+                        <h4 id = 'description'>description</h3>
+                    </div>
+                </div>
+                 <div class = "col-lg-6 col-md-6 col-sm-6 center-block text-center">
+                    <div id="map" class = "img-responsive"></div>
+                </div>
+            </div>
+                <div class = "row">
+                    <div class = 'block col-md-12 cl-sm-12 cl-xs-12' id = "info">
+                        <div class = 'row'>
+                            <div class = 'col-sm-4'>
+                                <h3 id = 'windSpeed'>windSpeed</h4>
+                            </div>
+                            <div class = 'col-sm-4'>
+                                <h3 id = 'humidity'>Humidity</h4>
+                            </div>
+                            <div class = 'col-sm-4'>
+                                <h3 id = 'precipitation'>Precipitation</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = 'block forecast-block col-md-12 col-sm-12 col-xs-12'>
+                        <h2>7 Day Forecast</h4>
+                        <div id = 'forecast' class = 'row text-center'></div>
+                    </div>
+                </div>
+                    <div class = "signature">
+                        <p>A CS50 Final Project by Josh Beasley, Tommy Johnson, & Molly Rogelstad</p>
+                        <a href = "https://darksky.net/poweredby/">Powered by DarkSky</a>
+                    </div>
+
+
+
+
+            </div>
+
+        </div>
+    </body>
+</html>

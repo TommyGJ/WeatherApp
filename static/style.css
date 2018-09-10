@@ -1,0 +1,145 @@
+body {
+    /*background: url('https://images.freecreatives.com/wp-content/uploads/2016/02/Blue-Gradient-Blur-Background-For-Free.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    background-color: white;
+    color: white;
+    font-family: 'Khand', sans-serif;
+}
+
+h1{
+    background-color: black;
+    width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    opacity: .7;
+}
+
+.block{
+    background-color: #808080;
+    opacity: .7;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+    color: white;
+    margin-top: 20px;
+
+
+}
+
+h2{
+    padding-top: 20px;
+}
+
+h4{
+    padding: 5px;
+}
+
+.icon{
+    width: 200px;
+    height: 200px;
+    color: white;
+    margin-bottom: -20px;
+}
+
+.forecast_icon{
+    color: white;
+    width: 150px;
+    height: 150px;
+
+}
+
+.forecast_box{
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: 35px;
+    margin-right: 45px;
+
+}
+
+#f, #c{
+    margin-bottom: 20px;
+}
+
+#temp{
+    font-size: 100px;
+}
+
+
+
+#search{
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    margin-top: 20px;
+    width: 300px;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#map{
+    height: 545px;
+    width: 100%;
+    float: right;
+    margin-top: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 20px;
+
+}
+#leftside{
+    float: left;
+
+}
+
+#description{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+#info{
+    width: 100%;
+
+}
+
+#main{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.forecast-block{
+    width: 100%;
+
+}
+
+.forecast_text{
+    margin-left: 35px;
+    font-size: 40px;
+}
+
+.day{
+    font-size: 30px;
+}
+
+.signature{
+    color: white;
+    background-color: #428bca;
+    margin-top: 50px;
+}
+
